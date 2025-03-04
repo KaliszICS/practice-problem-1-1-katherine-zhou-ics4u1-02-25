@@ -38,5 +38,13 @@ public class PracticeProblem {
 		//Write question 3 code here
 	}
 
+	public static int sumColumn(int[][] array, int column){
+		int total = 0;
+		for (int c = 0; c< array.length; c++){
+			total+= array[c][column];
+		}
+		return total;
+	}
+
 
 }
