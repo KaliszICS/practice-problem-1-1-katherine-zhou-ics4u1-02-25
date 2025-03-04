@@ -2,6 +2,7 @@ public class PracticeProblem {
 
 	public static void main(String args[]) {
 		q1();
+		q2();
 
 	}
 
@@ -24,16 +25,18 @@ public class PracticeProblem {
 		//Write question 2 code here
 	}
 
+	public static int sumRow(int[][] array, int ow){
+		int s = 0;
+		for (int r = 0; r < array[ow].length; r++){
+			s+= array[ow][r];
+
+		}
+		return s;
+	}
+
 	public static void q3() {
 		//Write question 3 code here
 	}
 
-	public static void q4() {
-		//Write question 4 code here
-	}
-
-	public static void q5() {
-		//Write question 5 code here
-	}
 
 }
