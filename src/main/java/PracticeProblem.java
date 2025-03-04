@@ -1,12 +1,24 @@
 public class PracticeProblem {
 
 	public static void main(String args[]) {
+		q1();
 
 	}
 
 	public static void q1() {
 		//Write question 1 code here
+
 	}
+	public static int sum2D(int[][] array){
+		int sum = 0;
+		for (int row = 0; row < array.length; row++){
+			for (int col = 0; col< array[row].length; col++){
+				sum+= array[row][col];
+			}
+		}
+		return sum;
+	}
+
 
 	public static void q2() {
 		//Write question 2 code here
