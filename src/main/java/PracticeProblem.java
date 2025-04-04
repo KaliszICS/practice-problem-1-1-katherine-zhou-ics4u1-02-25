@@ -1,9 +1,6 @@
 public class PracticeProblem {
 
 	public static void main(String args[]) {
-		q1();
-		q2();
-		q3();
 
 	}
 
@@ -33,12 +30,13 @@ public class PracticeProblem {
 			for (int col = 0; col < array[row].length; col++) {
                 sum += array[row][col];
 		}
+		} 
 		else{
 			return 0;
 		}
 		return sum;
 	}
-}
+
 
 	public static void q3() {
 		//Write question 3 code here
@@ -46,11 +44,13 @@ public class PracticeProblem {
 
 	public static int sumColumn(int[][] array, int column){
 		int total = 0;
-		for (int c = 0; c< array.length; c++){
-			total+= array[c][column];
+		if (array.length > 0 && column >= 0 && column < array[0].length){
+			for (int c = 0; c< array.length; c++){
+				total+= array[c][column];
 		}
 		return total;
 	}
 
 
+}
 }
